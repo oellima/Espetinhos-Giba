@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="./styles/output.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Espetinhos do GIBA</title>
 </head>
 <body>
@@ -17,11 +19,162 @@
             <h1 class="text-4xl mt-4 mb-2 font-bold text-white text-center">Espetinhos do Giba</h1>
             <span class="text-white font-medium text-center">Rua Bacharel Irenaldo de Albuquerque Chaves nº 201, Bessa - João Pessoa/PB </span>
             <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-                <span class="text-white font-medium">Seg à Sab - 16:00 às 23:00</span>
+                <span class="text-white font-medium">Seg à Sex - 16:00 às 23:00</span>
             </div>
         </div>
     </header>
     <!--FIM HEADER-->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheça nossos espetinhos</h2>
+    <br>
+    <!--INICIO MENU-->
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <!--INICIO PRODUTOS-->
+            <!--CARNE-->
+            <div class="flex gap-2">
+                <img src="./assets/carne-1.jpg" alt="carne" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Espetinho de Carne</p>
+                    <p class="text-sm">Carne Bovina (cortes do alcatra) sem osso, temperado com ingredientes de alta qualidade. Acompanha vinagrete e farofa especial.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">9.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="carne" data-price="9.00">
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--CARNE DE SOL COM QUEIJO COALHO-->
+            <div class="flex gap-2">
+                <img src="./assets/carne-2.jpg" alt="carne dde sol com queijo" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Espetinho de carne de sol com queijo coalho</p>
+                    <p class="text-sm">Carne Bovina (cortes do alcatra) sem osso, temperado com ingredientes de alta qualidade e queijo coalho. Acompanha vinagrete e farofa especial.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 12.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="carne dde sol com queijo" data-price="12.00">
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FRANGO-->
+            <div class="flex gap-2">
+                <img src="./assets/frang1.jpg" alt="frango" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Espetinho de frango</p>
+                    <p class="text-sm">Carne de frango, temperado com ingredientes de alta qualidade. Acompanha vinagrete e farofa especial.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 8.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="frango" data-price="8.00">
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FRANGO COM BACON-->
+            <div class="flex gap-2">
+                <img src="./assets/frang-2.jpg" alt="frango com bacon" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Espetinho de frango com bacon</p>
+                    <p class="text-sm">Carne de frango com bacon, temperado com ingredientes de alta qualidade e bacon crocante. Acompanha vinagrete e farofa especial.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 12.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="frango com bacon" data-price="12.00">
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--CORAÇÃO-->
+            <div class="flex gap-2">
+                <img src="./assets/coracao-1.jpg" alt="coração" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Espetinho coração de frango</p>
+                    <p class="text-sm">Coração de frango temperado com ingredientes de alta qualidade. Acompanha vinagrete e farofa especial.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 11.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="coração" data-price="11.00">
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--LOMBO SUÍNO-->
+            <div class="flex gap-2">
+                <img src="./assets/lombo-1.jpg" alt="lombo suíno" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Espetinho de lombo suíno</p>
+                    <p class="text-sm">Carne de porco, sem osso, temperado com ingredientes de alta qualidade. Acompanha vinagrete e farofa especial.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 10.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="lombo suíno" data-price="10.00">
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--MISTO-->
+            <div class="flex gap-2">
+                <img src="./assets/misto-1.jpg" alt="misto" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Espetinho misto (carne, frango e queijo coalho)</p> 
+                    <p class="text-sm">Espetinhos com 3 tipos de carnes, temperado com ingredientes de alta qualidade. Acompanha vinagrete e farofa especial.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 12.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="misto" data-price="12.00">
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--QUEIJO COALHO-->
+            <div class="flex gap-2">
+                <img src="./assets/queijo-1.jpg" alt="queijo coalho" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Espetinho de queijo coalho</p>
+                    <p class="text-sm">Queijo coalho temperado com tomate e orégano de alta qualidade. Acompanha vinagrete e farofa especial.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 8.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="queijo coalho" data-price="8.00">
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--LINGUIÇA TOSCANA-->
+            <div class="flex gap-2">
+                <img src="./assets/linguica-1.jpg" alt="linguiça toscana" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Espetinho de linguiça toscana</p>
+                    <p class="text-sm">Linguiça toscana temperada com ingredientes de alta qualidade. Acompanha vinagrete e farofa especial.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 7.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="linguiça toscana" data-price="7.00">
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--ASINHA DE FRANGO-->
+            <div class="flex gap-2">
+                <img src="./assets/asinha-1.jpg" alt="asinha de frango" class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Espetinho de asa de frango</p>
+                    <p class="text-sm">Asinha de frango temperada com ingredientes de alta qualidade. Acompanha vinagrete e farofa especial.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 8.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="asinha de frango" data-price="8.00">
+                            <i class="fa-solid fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTOS-->
+        </main>
+    </div>
+    <!--FIM MENU-->
     
 </body>
 </html>
