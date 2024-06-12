@@ -183,7 +183,7 @@ function checkRestauranteOpen() {
 
     const data = new Date();
     const hora = data.getHours();
-    return hora >= 18 && hora < 22; // true = loja aberta
+    return hora >= 16 && hora < 23; // true = loja aberta
 }
 
 const spanItem = document.getElementById("date-span")
